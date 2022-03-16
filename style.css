@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url("logo.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+.mytabs label {
+    padding: 15px;
+    background: #fff;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%
+    padding: 20px;
+    order: 1;
+    display: none;
+}
+
+.mytabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #D3D3D3;
+}
